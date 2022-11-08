@@ -22,12 +22,11 @@ const DropDown = styled.div `
         font-weight: 500;
         font-size: 18px;
         line-height: 160%;
-        
     }
     .currencyOptions {
+        box-shadow: 0px 1px 8px #a8acb0;
         z-index: 1000;
         background-color: white;
-        border-radius: 5px;
         position: absolute;
         top: 100%;
         left: -100%;
@@ -47,10 +46,10 @@ const DropDown = styled.div `
     .currencySymbol {
         padding-right: 10px;
     }
-    .currency-options div:hover {
+    .currencyOptions div:hover {
         background: #EEEEEE;
     }
-    .currency-options.show {
+    .currencyOptions.show {
         height: auto;
         max-height: 200px;
         transition: max-height 0.3s ease-in;

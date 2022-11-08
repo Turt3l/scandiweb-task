@@ -116,6 +116,7 @@ const CartContainer = styled.div`
         line-height: 28px;
     }
     .quantity-button {
+        cursor: pointer;
         background-color: white;
         border: 1px solid black;
         width: 45px;

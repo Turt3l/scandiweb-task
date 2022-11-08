@@ -90,9 +90,15 @@ const StyledProducts = styled.div `
   color: black;
   text-decoration: none;
   }
+  .product-container.out-of-stock .product-image {
+    pointer-events: none;
+  }
   .productContainer.out-of-stock {
     pointer-events: none;
     opacity: 0.5;
+  }
+  .product-container.out-of-stock .product-brand {
+    pointer-events: none;
   }
 `
 const Products = ({ productsData, cartActions, currency }) => {

@@ -14,6 +14,7 @@ background-color: white;
 .headerLogo {
     cursor: pointer;
 }
+
 .counter {
     width: 20px;
     border-radius: 20px;
@@ -35,7 +36,7 @@ background-color: white;
     margin-left: 10%;
 }
 .CartItems {
-
+    box-shadow: 0px 1px 8px #a8acb0;
     position: absolute;
     overflow-y:auto;
     max-height:100%
@@ -218,7 +219,7 @@ const Cart = () => {
                 </div>
                 <div className="buttonContainer">
                     <Link to="/cart">VIEW BAG</Link>
-                    <button onClick={() => dispatch(cartActions.resetItems())}>CHECK OUT</button>
+                    <button onClick={() => dispatch(cartActions.buyItems())}>CHECK OUT</button>
                 </div>
             </div>
         </CartContainer>

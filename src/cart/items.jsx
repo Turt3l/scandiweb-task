@@ -3,14 +3,12 @@ import { cartActions } from "../store/cartslc";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 const CartItems = ({ items, currency }) => {
-  const [selectedImage, setSelectedImage] = useState(0);
   const dispatch = useDispatch();
   const renderedItems = items.map((item) => {
     const product = item.product;
     const key = item.key;
     const quantity = item.quantity;
     const attributesArray = [item.attribute1, item.attribute2, item.attribute3];
-
     const attributes = product?.attributes.map((attribute, attributeIndex) => {
       return (
         <div className="attribute-container" key={attribute.id}>
@@ -44,8 +42,8 @@ const CartItems = ({ items, currency }) => {
     return (
       <div className="item-container" key={key}>
         <div className="details-container">
-          {/* <div className="brand"><Link to={`/${product.id}`}>{product.brand}</Link></div>
-              <div className="name"><Link to={`/${product.id}`}>{product.name}</Link></div> */}
+          <div className="brand"><Link to={`/${product.id}`}>{product.brand}</Link></div>
+          <div className="name"><Link to={`/${product.id}`}>{product.name}</Link></div>
           <div className="price">
             {currency.symbol}
             {item.product.prices[currency.value].amount.toFixed(2)}
