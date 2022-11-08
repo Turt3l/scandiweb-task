@@ -1,4 +1,4 @@
-<h1>My scandiweb application project.</h1>
+<h1>My scandiweb react application project.</h1>
 Scaffold and run with `npm run start`.
 <br>
 Connected to endpoint local:4000.
