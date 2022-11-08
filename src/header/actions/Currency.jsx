@@ -47,10 +47,10 @@ const DropDown = styled.div `
     .currencySymbol {
         padding-right: 10px;
     }
-    .currency-options div:hover {
+    .currencyOptions div:hover {
         background: #EEEEEE;
     }
-    .currency-options.show {
+    .currencyOptions.show {
         height: auto;
         max-height: 200px;
         transition: max-height 0.3s ease-in;
